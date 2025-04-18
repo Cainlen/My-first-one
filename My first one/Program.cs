@@ -7,62 +7,49 @@ Console.WriteLine("Lovely Day init");
 Console.WriteLine("Sunny Day");
 Console.WriteLine("Semi windy day");
 
-string userOption, displayOption;
-userOption = "Audio";
-Console.WriteLine(userOption);
-userOption = "Video";
-Console.WriteLine(userOption);
-userOption = "Graphics";
-Console.WriteLine(userOption);
-displayOption = "Resolution";
+string[] userOptions = { "Audio", "Video", "Graphics" };
+foreach (var option in userOptions)
+{
+    Console.WriteLine(option);
+}
+
+string displayOption = "Resolution";
 Console.WriteLine(displayOption);
 
-int gameScore;
-gameScore = 100;
+int gameScore = 100;
 Console.WriteLine(gameScore);
 
-decimal particlesPerMillion;
-particlesPerMillion = 0.000001m;
+decimal particlesPerMillion = 0.000001m;
 Console.WriteLine(particlesPerMillion);
 
-bool processedCustomer;
-processedCustomer = true;
+bool processedCustomer = true;
 Console.WriteLine(processedCustomer);
 
-string firstName = ("Bob");
-int messages = (3);
-decimal temperature = (34.4m);
+string firstName = "Bob";
+int messages = 3;
+decimal temperature = 34.4m;
 
-Console.Write("Hello, "); Console.Write(firstName); Console.Write("! You have "); Console.Write(messages);
-Console.Write(" messages in your inbox. The temperature is "); Console.Write(temperature);
-Console.Write(" celsius.");
+Console.WriteLine($"Hello, {firstName}! You have {messages} messages in your inbox. The temperature is {temperature} celsius.");
 
 Console.WriteLine("Hello\nWorld!");
 Console.WriteLine("Hello\tWorld!");
-
 Console.WriteLine("Hello\"World\"!");
-
 Console.WriteLine("c:\\temp\\myfile.txt");
 
+// Generate a receipt for a customer
+Console.WriteLine("Generating Receipt for Customer \"Big Company\",,,,\n");
+for (int i = 2501; i <= 2502; i++)
 {
-    // Generate a receipt for a customer
-    Console.WriteLine("Generating Receipt for Customer \"Big Company\",,,,\n");
-    Console.WriteLine("Receipt number 2501\t\tCompleted sucesssfully\n");
-    Console.WriteLine("Receipt number 2502\t\tCompleted sucesssfully");
-    Console.WriteLine("\nOutput Directojary:\t");
-    Console.WriteLine(@"C:\Username\Invoices
-    (This is where invoices go to)");
+    Console.WriteLine($"Receipt number {i}\t\tCompleted successfully");
 }
-    {
-        // Set console encoding to UTF-8
-        Console.OutputEncoding = Encoding.UTF8;
+Console.WriteLine("\nOutput Directory:\t");
+Console.WriteLine(@"C:\Username\Invoices
+(This is where invoices go to)");
 
-        // To generate Japanese invoices:
-        // Nihon no seikyū-sho o seisei suru ni wa
-        Console.Write("\n\n日本の請求書を生成するには\n");
+// Set console encoding to UTF-8
+Console.OutputEncoding = Encoding.UTF8;
 
-        Console.WriteLine(@"c:\invoices\app.exe -j");
-        Console.WriteLine(" ");
-        Console.WriteLine(@"C:\Username\docusments\my games
-(This is where my games are stored)");
-    }
+// To generate Japanese invoices:
+Console.WriteLine("\n\n日本の請求書を生成するには");
+Console.WriteLine(@"c:\invoices\app.exe -j");
+Console.WriteLine("\nc:\"Username\"documents\"my games\n(This is where my games are stored)");
