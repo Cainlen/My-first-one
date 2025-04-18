@@ -5,22 +5,19 @@ Console.WriteLine("Lovely Day init");
 Console.WriteLine("Sunny Day");
 Console.WriteLine("Semi windy day");
 
-char userOption = 'A';
-Console.WriteLine($"User option: {userOption}");
+string userOption;
+userOption = "Audio";
 
-int gameScore = 100;
-Console.WriteLine($"Game score: {gameScore}");
+int gameScore;
+gameScore = 100;
 
-decimal particlesPerMillion = 0.0000001m;
-Console.WriteLine($"Particles per million: {particlesPerMillion}");
+decimal particlesPerMillion;
+particlesPerMillion = 0.000001m;
 
-bool processedCustomer = true;
-bool isProcessed = true;
-Console.WriteLine($"Processed customer: {processedCustomer}");
-Console.WriteLine($"Is processed: {isProcessed}");
+bool processedCustomer;
+processedCustomer = true;
 
-Console.WriteLine("Sounds");
-Console.WriteLine(2500);
-Console.WriteLine(12.325263321m);
-Console.Write(true);
-Console.Write(" "); Console.Write("or"); Console.Write(" "); Console.Write(false);
+Console.WriteLine(userOption);
+Console.WriteLine(gameScore);
+Console.WriteLine(particlesPerMillion);
+Console.WriteLine(processedCustomer);
