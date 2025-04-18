@@ -7,17 +7,20 @@ Console.WriteLine("Semi windy day");
 
 string userOption;
 userOption = "Audio";
+Console.WriteLine(userOption);
+userOption = "Video";
+Console.WriteLine(userOption);
+userOption = "Graphics";
+Console.WriteLine(userOption);
 
 int gameScore;
 gameScore = 100;
+Console.WriteLine(gameScore);
 
 decimal particlesPerMillion;
 particlesPerMillion = 0.000001m;
+Console.WriteLine(particlesPerMillion);
 
 bool processedCustomer;
 processedCustomer = true;
-
-Console.WriteLine(userOption);
-Console.WriteLine(gameScore);
-Console.WriteLine(particlesPerMillion);
 Console.WriteLine(processedCustomer);
